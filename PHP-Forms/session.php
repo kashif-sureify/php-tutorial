@@ -34,6 +34,8 @@ if (isset($_POST['button'])) {
     if ($_POST['button'] == 'get') {
         if (isset($_SESSION['user'])) {
             echo "session value: " . $_SESSION['user'];
+        } else {
+            echo "No session value set";
         }
     }
 
